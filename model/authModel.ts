@@ -5,6 +5,7 @@ interface iAuth {
     email : string;
     password : string;
     image : string;
+    imageID : string;
     verified : boolean;
     token : string;
     practice : {}[];
@@ -25,6 +26,9 @@ const authModel = new Schema<iAuthData>({
         type : String,
     },
     image : {
+        type : String,
+    },
+    imageID : {
         type : String,
     },
     verified : {
